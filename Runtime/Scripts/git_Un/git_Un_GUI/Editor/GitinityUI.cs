@@ -60,7 +60,7 @@ public class GitinityUI : EditorWindow
         UserEmail.RegisterValueChangedCallback(UpdateUser);
 
         GitExe.SetValueWithoutNotify(GlobalRefs.filePaths.gitBashExe);
-        GitExe.RegisterValueChangedCallback(UpdateRemoteLink);
+        RemoteLink.RegisterValueChangedCallback(UpdateRemoteLink);
 
         RemoteLink.SetValueWithoutNotify(GlobalRefs.filePaths.remoteUrl);
         RemoteLink.RegisterValueChangedCallback(UpdateRemoteLink);
